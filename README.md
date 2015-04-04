@@ -29,7 +29,7 @@ Installation
 ```
 platform :ios, "8.0"
 
-pod 'MPCheckBox', :git => 'https://github.com/MikePT28/MPCheckBox.git'
+pod 'MPCheckBox'
 
 source 'https://github.com/CocoaPods/Specs.git'
 ```
