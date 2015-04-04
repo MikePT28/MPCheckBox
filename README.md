@@ -21,7 +21,13 @@ Installation
 * Import the checkbox class you want to use.
 
 ##Cocoapods
-* Coming Soon.
+```
+platform :ios, "8.0"
+
+pod 'MPCheckBox', :git => 'https://github.com/MikePT28/MPCheckBox.git'
+
+source 'https://github.com/CocoaPods/Specs.git'
+```
 
 How to use
 ==========
