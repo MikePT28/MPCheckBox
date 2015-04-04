@@ -1,12 +1,3 @@
-#
-# Be sure to run `pod lib lint ${POD_NAME}.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "MPCheckBox"
   s.version          = "0.1"
@@ -22,7 +13,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'MPCheckBox/*'
+  s.source_files = 'MPCheckBox/*.{h,m}'
   s.requires_arc = true
 
 end
