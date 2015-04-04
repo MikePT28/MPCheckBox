@@ -13,6 +13,11 @@ So far there are only two types of check boxes:
  
 ![Screenshot](https://raw.githubusercontent.com/MikePT28/MPCheckBox/master/Images/image.png)
 
+##TODO
+- [x] Pod
+- [ ] Add touch feedback
+- [ ] Add support for radial groups
+
 Installation
 =============
 
