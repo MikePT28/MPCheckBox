@@ -18,5 +18,6 @@ Pod::Spec.new do |s|
 
   s.source_files  = "MPCheckBox/*.{h,m}"
   s.requires_arc = true
+  
 
 end
