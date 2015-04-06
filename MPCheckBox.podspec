@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #
 #  Be sure to run `pod spec lint MPCheckBox.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
@@ -138,3 +139,16 @@ Pod::Spec.new do |s|
   # s.dependency "JSONKit", "~> 1.4"
 
 end
+=======
+Pod::Spec.new do |spec|
+  spec.name         = 'MPCheckBox'
+  spec.version      = '0.1.2'
+  spec.license      = { :type => 'MIT' }
+  spec.homepage     = 'https://github.com/MikePT28/MPCheckBox'
+  spec.authors      = { 'MikePT28' => '' }
+  spec.summary      = "Custom Check Boxes class."
+  spec.source       = { :git => 'https://github.com/MikePT28/MPCheckBox.git', :tag => 'v0.1.2' }
+  spec.source_files = 'MPCheckBox/*.{h,m}'
+  spec.platform     = :ios, "8.0"
+end
+>>>>>>> v0.1.2

@@ -7,17 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MPCheckBoxDelegate.h"
 
 /**
  Posible CheckBox's states.
  */
-typedef enum : NSUInteger {
-    kMPCheckBoxStateUnchecked = 0,
+typedef NS_ENUM(NSUInteger, kMPCheckBoxState)
+{
+    kMPCheckBoxStateUnchecked,
     kMPCheckBoxStateChecked
-} kMPCheckBoxState;
-
-
-@protocol MPCheckBoxDelegate;
+};
 
 IB_DESIGNABLE
 @interface MPCheckBox : UIControl
@@ -45,6 +44,15 @@ IB_DESIGNABLE
  *  @param animated
  */
 -(void)setState:(kMPCheckBoxState)state animated:(BOOL)animated;
+
+/**
+ *  Define the initial state or change it manually. Decide if delegate should be notified about the change.
+ *
+ *  @param state
+ *  @param animated
+ *  @param notify
+ */
+-(void)setState:(kMPCheckBoxState)state animated:(BOOL)animated notifyDelegate:(BOOL)notify;
 
 /**
  *  Change the CheckBox's state to the opposite one
@@ -80,19 +88,5 @@ IB_DESIGNABLE
  *  @param circular 
  */
 -(void)setCircular:(BOOL)circular;
-
-@end
-
-
-
-@protocol MPCheckBoxDelegate <NSObject>
-
-@optional
-/**
- *  Called after the CheckBox state changed
- *
- *  @param state
- */
--(void)mpCheckBoxDidChangeState:(kMPCheckBoxState)state checkBox:(MPCheckBox*)checkBox;
 
 @end

@@ -1,5 +1,8 @@
 # MPCheckBox
 
+[![CocoaPods](https://img.shields.io/cocoapods/v/MPCheckBox.svg)]() 
+[![LICENSE](https://img.shields.io/badge/License-MIT-brightgreen.svg)]()
+
 Custom Check Boxes class. 
 
 Extends UIControl class. 
@@ -16,7 +19,11 @@ So far there are only two types of check boxes:
 ##TODO
 - [x] Pod
 - [ ] Add touch feedback
+<<<<<<< HEAD
 - [ ] Add support for radial groups
+=======
+- [x] Add support for radial groups
+>>>>>>> v0.1.2
 
 Installation
 =============
@@ -48,6 +55,9 @@ How to use
 NOTE: Each Check Box has an identifier, that property is assignable from the IB.
 
 ##Programmatically
+
+###CheckBoxes
+
 ```objective-C
     #import "MPCheckBox.h" //Import header
 
@@ -56,7 +66,7 @@ NOTE: Each Check Box has an identifier, that property is assignable from the IB.
     MPCheckBox *checkBox = [[MPCheckBox alloc] initWithFrame:someFrame];
     checkBox.identifier = @"someIdent";
     checkBox setDelegate:self];
-    [checkBox setCompanionView:someView]; //Can be anithing that inherits from UIView
+    [checkBox setCompanionView:someView]; //Can be anything that inherits from UIView
     //For circular
     [checkBox setCircular:YES]; //Default is NO
     //Set State
@@ -70,6 +80,15 @@ NOTE: Each Check Box has an identifier, that property is assignable from the IB.
     [checkBox toggleState:YES];
     [someOtherView addSubView:checkBox];
 ```
+###CheckBox Group
+```objective-C
+    NSArray* checkBoxes = @[leftmostCheckBox, leftCheckBox, rightCheckBox, rightmostCheckBox];
+
+    MPCheckBoxGroup* checkBoxGroup = [[MPCheckBoxGroup alloc] init];
+    [checkBoxGroup setCheckBoxes:checkBoxes];
+    [checkBoxGroup setDelegate:self];
+    [checkBoxGroup setIdentifier:@"group"];
+```
 
 License
 ============
@@ -77,4 +96,4 @@ MIT but Read de LICENSE file for more info.
 
 Version
 ===========
-v0.1 ~ Method names and properties may change in the future. The will be specified but concider yourself warned.
+v0.1.1 ~ Method names and properties may change in the future. The will be specified but concider yourself warned.
