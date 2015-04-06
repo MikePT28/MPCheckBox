@@ -7,8 +7,10 @@
 //
 
 #import "MPCheckBox.h"
+#import "MPTapGetureRecognizer.h"
+#import "MPTapGestureRecognizerDelegate.h"
 
-@interface MPCheckBox() {
+@interface MPCheckBox() <MPTapGestureRecognizerDelegate>{
     
     UIView* innerView;
     
@@ -70,8 +72,9 @@
     [self initInnerView];
     
     //Tap Gesture
-    UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc] initWithTarget:self
+    MPTapGetureRecognizer* tap = [[MPTapGetureRecognizer alloc] initWithTarget:self
                                                                           action:@selector(tapGesture:)];
+    [tap setMpDelegate:self];
     [self addGestureRecognizer:tap];
     
     //Enabled
@@ -96,11 +99,14 @@
 #pragma mark - Gesture Method
 
 -(void)tapGesture:(UITapGestureRecognizer*)gesture{
+
     if (!self.enabled) {
         return;
     }
     
     [self toggleState:YES];
+    
+    
 }
 
 #pragma mark - Setters
@@ -226,6 +232,39 @@
         return [selfIdentifier isEqualToString:objectIdentifier];
     }
     return NO;
+}
+
+#pragma mark - MPTapGesture Delegate
+
+-(void)mpTapGestureStateChanged:(UIGestureRecognizerState)state{
+    switch (state) {
+        case UIGestureRecognizerStateBegan:
+        case UIGestureRecognizerStatePossible:
+            [self animateOnTouch:NO];
+            break;
+        case UIGestureRecognizerStateEnded:
+        case UIGestureRecognizerStateFailed:
+        case UIGestureRecognizerStateCancelled:
+        case UIGestureRecognizerStateChanged:
+            [self animateOnTouch:YES];
+            break;
+        default:
+            break;
+    }
+    
+    
+}
+
+#pragma mark - Touch Feedback
+-(void)animateOnTouch:(BOOL)ended{
+    CATransform3D t = CATransform3DMakeScale(1.2, 1.2, 1);
+    if (ended) {
+        t = CATransform3DIdentity;
+    }
+    [UIView animateWithDuration:.2
+                     animations:^{
+                         [self.layer setTransform:t];
+                     }];
 }
 
 @end
