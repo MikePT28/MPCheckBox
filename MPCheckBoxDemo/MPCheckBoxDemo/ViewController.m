@@ -49,6 +49,7 @@
     [circularCheckBox setDelegate:self];
     [circularCheckBox setCompanionView:circularLabel];
     [circularCheckBox setState:kMPCheckBoxStateChecked animated:NO];
+    [circularCheckBox setCircular:YES];
 
     //Disabled
     [disabledView setBackgroundColor:[UIColor colorWithRed:1.f green:1.f blue:1.f alpha:.5f]];

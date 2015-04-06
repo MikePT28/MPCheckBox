@@ -30,6 +30,7 @@
 /* Begin PBXFileReference section */
 		270447521AD069C700F92ECF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		270447531AD069C700F92ECF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		27806E2F1AD1DC41004F3E7F /* MPCheckBoxDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCheckBoxDelegate.h; sourceTree = "<group>"; };
 		27B9DFF51AD05DDA002EEF49 /* MPCheckBoxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPCheckBoxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B9DFF91AD05DDA002EEF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27B9DFFA1AD05DDA002EEF49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +64,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27806E301AD1E1C6004F3E7F /* MPCheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				27B9E01E1AD05DFA002EEF49 /* MPCheckBox.h */,
+				27B9E01F1AD05DFA002EEF49 /* MPCheckBox.m */,
+				27806E311AD1E1D1004F3E7F /* Protocols */,
+			);
+			name = MPCheckBox;
+			sourceTree = "<group>";
+		};
+		27806E311AD1E1D1004F3E7F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				27806E2F1AD1DC41004F3E7F /* MPCheckBoxDelegate.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		27B9DFEC1AD05DDA002EEF49 = {
 			isa = PBXGroup;
 			children = (
@@ -87,8 +106,7 @@
 				27B9DFFC1AD05DDA002EEF49 /* AppDelegate.h */,
 				27B9DFFD1AD05DDA002EEF49 /* AppDelegate.m */,
 				27B9DFFF1AD05DDA002EEF49 /* ViewController.h */,
-				27B9E01E1AD05DFA002EEF49 /* MPCheckBox.h */,
-				27B9E01F1AD05DFA002EEF49 /* MPCheckBox.m */,
+				27806E301AD1E1C6004F3E7F /* MPCheckBox */,
 				270447521AD069C700F92ECF /* ViewController.m */,
 				270447531AD069C700F92ECF /* Main.storyboard */,
 				27B9E0051AD05DDA002EEF49 /* Images.xcassets */,
