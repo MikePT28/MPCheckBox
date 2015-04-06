@@ -17,7 +17,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLb-tB-3Of" userLabel="Square">
+<<<<<<< HEAD
+                                <rect key="frame" x="0.0" y="250" width="600" height="100"/>
+=======
                                 <rect key="frame" x="0.0" y="196" width="600" height="100"/>
+>>>>>>> v0.1.2
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ScF-bn-Jwu" customClass="MPCheckBox">
                                         <rect key="frame" x="225" y="56" width="20" height="20"/>
@@ -28,18 +32,30 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Square"/>
+<<<<<<< HEAD
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="checkState" value="NO"/>
+=======
+>>>>>>> v0.1.2
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unchecked" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHn-9M-MVU">
                                         <rect key="frame" x="253" y="49" width="123" height="34"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="30"/>
+<<<<<<< HEAD
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+=======
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+>>>>>>> v0.1.2
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Square:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHc-39-raA">
                                         <rect key="frame" x="8" y="8" width="86" height="34"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="30"/>
+<<<<<<< HEAD
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+=======
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+>>>>>>> v0.1.2
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -55,7 +71,11 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lAw-Wf-jie" userLabel="Circular">
+<<<<<<< HEAD
+                                <rect key="frame" x="0.0" y="142" width="600" height="100"/>
+=======
                                 <rect key="frame" x="0.0" y="88" width="600" height="100"/>
+>>>>>>> v0.1.2
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6iM-wY-jOj" customClass="MPCheckBox">
                                         <rect key="frame" x="239" y="56" width="20" height="20"/>
@@ -66,18 +86,30 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Circular"/>
+<<<<<<< HEAD
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="checkState" value="YES"/>
+=======
+>>>>>>> v0.1.2
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checked" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXO-kg-Aic">
                                         <rect key="frame" x="267" y="49" width="94.5" height="34"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="30"/>
+<<<<<<< HEAD
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+=======
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+>>>>>>> v0.1.2
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Circular:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pha-o7-EnP">
                                         <rect key="frame" x="8" y="8" width="100" height="34"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="30"/>
+<<<<<<< HEAD
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+=======
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+>>>>>>> v0.1.2
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -93,12 +125,20 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sH8-d8-d1H" userLabel="Square">
+<<<<<<< HEAD
+                                <rect key="frame" x="0.0" y="358" width="600" height="100"/>
+=======
                                 <rect key="frame" x="0.0" y="304" width="600" height="100"/>
+>>>>>>> v0.1.2
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disabled:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyg-MV-KNm">
                                         <rect key="frame" x="8" y="8" width="103" height="34"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="30"/>
+<<<<<<< HEAD
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+=======
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+>>>>>>> v0.1.2
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Nu-Sa-t0T" customClass="MPCheckBox">
@@ -149,6 +189,8 @@
                                     <constraint firstAttribute="centerX" secondItem="QGJ-Fd-AqM" secondAttribute="centerX" constant="20" id="sne-Aq-JJV"/>
                                 </constraints>
                             </view>
+<<<<<<< HEAD
+=======
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hin-L3-sjk" userLabel="Square">
                                 <rect key="frame" x="0.0" y="412" width="600" height="100"/>
                                 <subviews>
@@ -226,6 +268,7 @@
                                     <constraint firstItem="KXG-gF-fnK" firstAttribute="top" secondItem="hin-L3-sjk" secondAttribute="top" constant="8" id="zYc-tz-KS7"/>
                                 </constraints>
                             </view>
+>>>>>>> v0.1.2
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -233,6 +276,13 @@
                             <constraint firstAttribute="trailing" secondItem="sH8-d8-d1H" secondAttribute="trailing" id="0t8-OX-ZYG"/>
                             <constraint firstItem="sH8-d8-d1H" firstAttribute="top" secondItem="TLb-tB-3Of" secondAttribute="bottom" constant="8" id="1xJ-DX-s6S"/>
                             <constraint firstItem="lAw-Wf-jie" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="DNF-xw-jEB"/>
+<<<<<<< HEAD
+                            <constraint firstItem="sH8-d8-d1H" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="fuw-4f-DWA"/>
+                            <constraint firstAttribute="trailing" secondItem="TLb-tB-3Of" secondAttribute="trailing" id="n6L-CY-maS"/>
+                            <constraint firstItem="TLb-tB-3Of" firstAttribute="top" secondItem="lAw-Wf-jie" secondAttribute="bottom" constant="8" id="q2w-tF-2VU"/>
+                            <constraint firstAttribute="trailing" secondItem="lAw-Wf-jie" secondAttribute="trailing" id="rWM-fY-PZZ"/>
+                            <constraint firstAttribute="centerY" secondItem="TLb-tB-3Of" secondAttribute="centerY" id="v9x-ci-N9e"/>
+=======
                             <constraint firstItem="hin-L3-sjk" firstAttribute="top" secondItem="sH8-d8-d1H" secondAttribute="bottom" constant="8" id="Nbg-DU-okp"/>
                             <constraint firstItem="sH8-d8-d1H" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="fuw-4f-DWA"/>
                             <constraint firstAttribute="trailing" secondItem="hin-L3-sjk" secondAttribute="trailing" id="jH8-Ib-W1l"/>
@@ -241,6 +291,7 @@
                             <constraint firstAttribute="trailing" secondItem="lAw-Wf-jie" secondAttribute="trailing" id="rWM-fY-PZZ"/>
                             <constraint firstAttribute="centerY" secondItem="TLb-tB-3Of" secondAttribute="centerY" constant="54" id="v9x-ci-N9e"/>
                             <constraint firstItem="hin-L3-sjk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="yy2-gC-Ouv"/>
+>>>>>>> v0.1.2
                         </constraints>
                     </view>
                     <connections>
@@ -252,12 +303,15 @@
                         <outlet property="disabledSquare" destination="aBv-dz-XP9" id="lct-F5-UdM"/>
                         <outlet property="disabledSquareChecked" destination="QGJ-Fd-AqM" id="83Y-6u-nOA"/>
                         <outlet property="disabledView" destination="sH8-d8-d1H" id="xJL-uh-5ST"/>
+<<<<<<< HEAD
+=======
                         <outlet property="groupLabel" destination="IN6-x5-KaA" id="OeK-44-J1D"/>
                         <outlet property="groupView" destination="hin-L3-sjk" id="TEu-ou-TCS"/>
                         <outlet property="leftCheckBox" destination="dJt-Q8-ETs" id="dsf-LN-CVd"/>
                         <outlet property="leftmostCheckBox" destination="7Yn-wn-n7S" id="ur8-xh-n01"/>
                         <outlet property="rightCheckBox" destination="Ins-kZ-pKO" id="uyn-de-5cq"/>
                         <outlet property="rightmostCheckBox" destination="hMF-jv-5n1" id="RcO-fJ-LwL"/>
+>>>>>>> v0.1.2
                         <outlet property="squareCheckBox" destination="ScF-bn-Jwu" id="juA-Ul-q7b"/>
                         <outlet property="squareLabel" destination="lHn-9M-MVU" id="8aa-23-H1y"/>
                         <outlet property="squareView" destination="TLb-tB-3Of" id="h99-Fx-35T"/>

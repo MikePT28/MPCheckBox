@@ -19,7 +19,11 @@ So far there are only two types of check boxes:
 ##TODO
 - [x] Pod
 - [ ] Add touch feedback
+<<<<<<< HEAD
+- [ ] Add support for radial groups
+=======
 - [x] Add support for radial groups
+>>>>>>> v0.1.2
 
 Installation
 =============
