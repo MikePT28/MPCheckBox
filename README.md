@@ -13,6 +13,11 @@ So far there are only two types of check boxes:
  
 ![Screenshot](https://raw.githubusercontent.com/MikePT28/MPCheckBox/master/Images/image.png)
 
+##TODO
+- [x] Pod
+- [ ] Add touch feedback
+- [ ] Add support for radial groups
+
 Installation
 =============
 
@@ -21,7 +26,13 @@ Installation
 * Import the checkbox class you want to use.
 
 ##Cocoapods
-* Coming Soon.
+```
+platform :ios, "8.0"
+
+pod 'MPCheckBox'
+
+source 'https://github.com/CocoaPods/Specs.git'
+```
 
 How to use
 ==========
@@ -45,7 +56,7 @@ NOTE: Each Check Box has an identifier, that property is assignable from the IB.
     MPCheckBox *checkBox = [[MPCheckBox alloc] initWithFrame:someFrame];
     checkBox.identifier = @"someIdent";
     checkBox setDelegate:self];
-    [checkBox setCompanionView:someView]; //Can be anithing that inherits from UIView
+    [checkBox setCompanionView:someView]; //Can be anything that inherits from UIView
     //For circular
     [checkBox setCircular:YES]; //Default is NO
     //Set State

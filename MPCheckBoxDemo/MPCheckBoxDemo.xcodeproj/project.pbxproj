@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270447541AD069C700F92ECF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270447521AD069C700F92ECF /* ViewController.m */; };
+		270447551AD069C700F92ECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270447531AD069C700F92ECF /* Main.storyboard */; };
 		27B9DFFB1AD05DDA002EEF49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B9DFFA1AD05DDA002EEF49 /* main.m */; };
 		27B9DFFE1AD05DDA002EEF49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B9DFFD1AD05DDA002EEF49 /* AppDelegate.m */; };
-		27B9E0011AD05DDA002EEF49 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B9E0001AD05DDA002EEF49 /* ViewController.m */; };
-		27B9E0041AD05DDA002EEF49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B9E0021AD05DDA002EEF49 /* Main.storyboard */; };
 		27B9E0061AD05DDA002EEF49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B9E0051AD05DDA002EEF49 /* Images.xcassets */; };
 		27B9E0091AD05DDA002EEF49 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27B9E0071AD05DDA002EEF49 /* LaunchScreen.xib */; };
 		27B9E0151AD05DDA002EEF49 /* MPCheckBoxDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B9E0141AD05DDA002EEF49 /* MPCheckBoxDemoTests.m */; };
@@ -28,14 +28,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		270447521AD069C700F92ECF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		270447531AD069C700F92ECF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		27806E2F1AD1DC41004F3E7F /* MPCheckBoxDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCheckBoxDelegate.h; sourceTree = "<group>"; };
 		27B9DFF51AD05DDA002EEF49 /* MPCheckBoxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPCheckBoxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B9DFF91AD05DDA002EEF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27B9DFFA1AD05DDA002EEF49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		27B9DFFC1AD05DDA002EEF49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27B9DFFD1AD05DDA002EEF49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		27B9DFFF1AD05DDA002EEF49 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		27B9E0001AD05DDA002EEF49 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		27B9E0031AD05DDA002EEF49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27B9E0051AD05DDA002EEF49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		27B9E0081AD05DDA002EEF49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		27B9E00E1AD05DDA002EEF49 /* MPCheckBoxDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MPCheckBoxDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +64,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27806E301AD1E1C6004F3E7F /* MPCheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				27B9E01E1AD05DFA002EEF49 /* MPCheckBox.h */,
+				27B9E01F1AD05DFA002EEF49 /* MPCheckBox.m */,
+				27806E311AD1E1D1004F3E7F /* Protocols */,
+			);
+			name = MPCheckBox;
+			sourceTree = "<group>";
+		};
+		27806E311AD1E1D1004F3E7F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				27806E2F1AD1DC41004F3E7F /* MPCheckBoxDelegate.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		27B9DFEC1AD05DDA002EEF49 = {
 			isa = PBXGroup;
 			children = (
@@ -87,10 +106,9 @@
 				27B9DFFC1AD05DDA002EEF49 /* AppDelegate.h */,
 				27B9DFFD1AD05DDA002EEF49 /* AppDelegate.m */,
 				27B9DFFF1AD05DDA002EEF49 /* ViewController.h */,
-				27B9E01E1AD05DFA002EEF49 /* MPCheckBox.h */,
-				27B9E01F1AD05DFA002EEF49 /* MPCheckBox.m */,
-				27B9E0001AD05DDA002EEF49 /* ViewController.m */,
-				27B9E0021AD05DDA002EEF49 /* Main.storyboard */,
+				27806E301AD1E1C6004F3E7F /* MPCheckBox */,
+				270447521AD069C700F92ECF /* ViewController.m */,
+				270447531AD069C700F92ECF /* Main.storyboard */,
 				27B9E0051AD05DDA002EEF49 /* Images.xcassets */,
 				27B9E0071AD05DDA002EEF49 /* LaunchScreen.xib */,
 				27B9DFF81AD05DDA002EEF49 /* Supporting Files */,
@@ -204,7 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B9E0041AD05DDA002EEF49 /* Main.storyboard in Resources */,
+				270447551AD069C700F92ECF /* Main.storyboard in Resources */,
 				27B9E0091AD05DDA002EEF49 /* LaunchScreen.xib in Resources */,
 				27B9E0061AD05DDA002EEF49 /* Images.xcassets in Resources */,
 			);
@@ -224,9 +242,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B9E0011AD05DDA002EEF49 /* ViewController.m in Sources */,
 				27B9DFFE1AD05DDA002EEF49 /* AppDelegate.m in Sources */,
 				27B9DFFB1AD05DDA002EEF49 /* main.m in Sources */,
+				270447541AD069C700F92ECF /* ViewController.m in Sources */,
 				27B9E0201AD05DFA002EEF49 /* MPCheckBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,14 +268,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		27B9E0021AD05DDA002EEF49 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				27B9E0031AD05DDA002EEF49 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		27B9E0071AD05DDA002EEF49 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -418,6 +428,7 @@
 				27B9E01A1AD05DDA002EEF49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27B9E01B1AD05DDA002EEF49 /* Build configuration list for PBXNativeTarget "MPCheckBoxDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +437,7 @@
 				27B9E01D1AD05DDA002EEF49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
