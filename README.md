@@ -19,7 +19,7 @@ So far there are only two types of check boxes:
 ##TODO
 - [x] Pod
 - [ ] Add touch feedback
-- [ ] Add support for radial groups
+- [x] Add support for radial groups
 
 Installation
 =============
@@ -51,6 +51,9 @@ How to use
 NOTE: Each Check Box has an identifier, that property is assignable from the IB.
 
 ##Programmatically
+
+###CheckBoxes
+
 ```objective-C
     #import "MPCheckBox.h" //Import header
 
@@ -72,6 +75,15 @@ NOTE: Each Check Box has an identifier, that property is assignable from the IB.
     //The state can be toggled manually from anywhere just call
     [checkBox toggleState:YES];
     [someOtherView addSubView:checkBox];
+```
+###CheckBox Group
+```objective-C
+    NSArray* checkBoxes = @[leftmostCheckBox, leftCheckBox, rightCheckBox, rightmostCheckBox];
+
+    MPCheckBoxGroup* checkBoxGroup = [[MPCheckBoxGroup alloc] init];
+    [checkBoxGroup setCheckBoxes:checkBoxes];
+    [checkBoxGroup setDelegate:self];
+    [checkBoxGroup setIdentifier:@"group"];
 ```
 
 License
