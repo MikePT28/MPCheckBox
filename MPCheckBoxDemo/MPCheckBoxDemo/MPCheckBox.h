@@ -46,6 +46,15 @@ IB_DESIGNABLE
 -(void)setState:(kMPCheckBoxState)state animated:(BOOL)animated;
 
 /**
+ *  Define the initial state or change it manually. Decide if delegate should be notified about the change.
+ *
+ *  @param state
+ *  @param animated
+ *  @param notify
+ */
+-(void)setState:(kMPCheckBoxState)state animated:(BOOL)animated notifyDelegate:(BOOL)notify;
+
+/**
  *  Change the CheckBox's state to the opposite one
  *
  *  @param animated

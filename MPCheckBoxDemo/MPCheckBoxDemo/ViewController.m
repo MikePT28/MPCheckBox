@@ -8,8 +8,10 @@
 
 #import "ViewController.h"
 #import "MPCheckBox.h"
+#import "MPCheckBoxGroup.h"
+#import "MPCheckBoxDelegate.h"
 
-@interface ViewController () <MPCheckBoxDelegate>{
+@interface ViewController () <MPCheckBoxDelegate, MPCheckBoxGroupDelegate>{
     
     //Square
     __weak IBOutlet UIView *squareView;
@@ -28,6 +30,15 @@
     __weak IBOutlet MPCheckBox *disabledSquareChecked;
     __weak IBOutlet MPCheckBox *disabledCircular;
     __weak IBOutlet MPCheckBox *disabledCircularChecked;
+    
+    //Group
+    __weak IBOutlet UIView *groupView;
+    __weak IBOutlet UILabel *groupLabel;
+    __weak IBOutlet MPCheckBox *leftmostCheckBox;
+    __weak IBOutlet MPCheckBox *leftCheckBox;
+    __weak IBOutlet MPCheckBox *rightCheckBox;
+    __weak IBOutlet MPCheckBox *rightmostCheckBox;
+    
 }
 
 @end
@@ -38,29 +49,47 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    UIColor* color = [UIColor colorWithRed:1.f green:1.f blue:1.f alpha:.5f];
+    
     //Square
-    [squareView setBackgroundColor:[UIColor colorWithRed:1.f green:1.f blue:1.f alpha:.5f]];
+    [squareView setBackgroundColor:color];
     
     [squareCheckBox setCompanionView:squareLabel];
     [squareCheckBox setDelegate:self];
     
     //Circular
-    [circularView setBackgroundColor:[UIColor colorWithRed:1.f green:1.f blue:1.f alpha:.5f]];
+    [circularView setBackgroundColor:color];
     [circularCheckBox setDelegate:self];
     [circularCheckBox setCompanionView:circularLabel];
     [circularCheckBox setState:kMPCheckBoxStateChecked animated:NO];
     [circularCheckBox setCircular:YES];
 
     //Disabled
-    [disabledView setBackgroundColor:[UIColor colorWithRed:1.f green:1.f blue:1.f alpha:.5f]];
+    [disabledView setBackgroundColor:color];
     
     [disabledSquare setEnabled:NO];
     [disabledSquareChecked setState:kMPCheckBoxStateChecked animated:NO];
     [disabledSquareChecked setEnabled:NO];
     
     [disabledCircular setEnabled:NO];
+    [disabledCircular setCircular:YES];
     [disabledCircularChecked setState:kMPCheckBoxStateChecked animated:NO];
     [disabledCircularChecked setEnabled:NO];
+    [disabledCircularChecked setCircular:YES];
+    
+    //Group
+    [groupView setBackgroundColor:color];
+    
+    NSArray* checkBoxes = @[leftmostCheckBox, leftCheckBox, rightCheckBox, rightmostCheckBox];
+    
+//    MPCheckBoxGroup* checkBoxGroup = [[MPCheckBoxGroup alloc] initWithCheckBoxes:checkBoxes];
+//    [checkBoxGroup setDelegate:self];
+//    [checkBoxGroup setIdentifier:@"group"];
+    
+    MPCheckBoxGroup* checkBoxGroup = [[MPCheckBoxGroup alloc] init];
+    [checkBoxGroup setCheckBoxes:checkBoxes];
+    [checkBoxGroup setDelegate:self];
+    [checkBoxGroup setIdentifier:@"group"];
     
     
     CAGradientLayer* gradient = [CAGradientLayer layer];
@@ -82,6 +111,19 @@
     
     [companionLabel setText:(state)? @"Checked" : @"Unchecked"];
     [companionLabel sizeToFit];
+    
+}
+
+#pragma mark - MPCheckBoxGroup Delegate
+-(void)mpCheckBoxGroupDidChangeSelectedCheckBox:(MPCheckBox *)checkBox previousSelectedCheckBox:(MPCheckBox *)previousCheckBox groupIdentifier:(NSString *)identifier{
+    
+    if (!checkBox) {
+        [groupLabel setText:@"Non Selected"];
+    } else {
+        [groupLabel setText:checkBox.identifier];
+    }
+    
+    [groupLabel sizeToFit];
     
 }
 

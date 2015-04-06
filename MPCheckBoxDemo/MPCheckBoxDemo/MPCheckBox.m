@@ -23,9 +23,15 @@
 #pragma mark - Inits
 
 -(instancetype)init{
+    self = [super init];
+    if (!self) {
+        return nil;
+    }
     
-    NSAssert(NO, @"%s method is not implemented!", __PRETTY_FUNCTION__);
-    return nil;
+    [self setFrame:CGRectMake(0, 0, 20, 20)];
+    [self commonInit];
+    
+    return self;
 }
 
 -(instancetype)initWithFrame:(CGRect)frame{
@@ -100,12 +106,16 @@
 #pragma mark - Setters
 
 -(void)setState:(kMPCheckBoxState)state animated:(BOOL)animated{
+    [self setState:state animated:animated notifyDelegate:YES];
+}
+
+-(void)setState:(kMPCheckBoxState)state animated:(BOOL)animated notifyDelegate:(BOOL)notify{
     if (state == _checkState) {
         return;
     }
-    
     _checkState = state;
-    [self checkedOrUnchecked:_checkState animated:animated];
+    
+    [self checkedOrUnchecked:_checkState animated:animated notifyDelegate:notify];
 }
 
 -(void)setCompanionView:(UIView *)companionView{
@@ -163,18 +173,24 @@
 
 -(void)checkedOrUnchecked:(BOOL)checked animated:(BOOL)animated{
     
+    [self checkedOrUnchecked:checked animated:animated notifyDelegate:YES];
+    
+}
+
+-(void)checkedOrUnchecked:(BOOL)checked animated:(BOOL)animated notifyDelegate:(BOOL)notify{
+    
     if (self.animating) {
         return;
     }
     self.animating = true;
     
-    [self changeState:(self.checkState)? 1.0f : 0.0f animated:animated];
+    [self changeState:(self.checkState)? 1.0f : 0.0f animated:animated notifyDelegate:notify];
     
-}   
+}
 
 #pragma mark - Private Method -
 
--(void)changeState:(CGFloat)alpha animated:(BOOL)animated{
+-(void)changeState:(CGFloat)alpha animated:(BOOL)animated notifyDelegate:(BOOL)notify{
     
     UIViewAnimationOptions options = UIViewAnimationOptionCurveEaseInOut | UIViewAnimationOptionTransitionFlipFromTop;
     
@@ -187,14 +203,17 @@
     void (^completion)(BOOL) = ^(BOOL finished)
     {
         self.animating = false;
-        [self.delegate mpCheckBoxDidChangeState:self.checkState checkBox:self];
     };
-        
+    
     [UIView animateWithDuration:duration
                           delay:0.0f
                         options:options
                      animations:animation
                      completion:completion];
+    
+    if (notify) {
+        [self.delegate mpCheckBoxDidChangeState:self.checkState checkBox:self];
+    }
 }
 
 #pragma mark - Overriden Methods

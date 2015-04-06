@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MPCheckBoxDelegate.h"
 
 @interface ViewController : UIViewController
 

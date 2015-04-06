@@ -13,6 +13,12 @@
 @protocol MPCheckBoxDelegate <NSObject>
 typedef NS_ENUM(NSUInteger, kMPCheckBoxState);
 
+/**
+ *  Called whenever a checkbox state changes.
+ *
+ *  @param state
+ *  @param checkBox 
+ */
 -(void)mpCheckBoxDidChangeState:(kMPCheckBoxState)state checkBox:(MPCheckBox*)checkBox;
 
 @end
