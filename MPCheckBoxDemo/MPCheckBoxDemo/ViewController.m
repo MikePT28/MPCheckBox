@@ -75,7 +75,11 @@
     [circularView setBackgroundColor:[UIColor colorWithRed:1.f green:1.f blue:1.f alpha:.5f]];
 =======
     [circularView setBackgroundColor:color];
+<<<<<<< HEAD
 >>>>>>> v0.1.2
+=======
+
+>>>>>>> v0.1.3
     [circularCheckBox setDelegate:self];
     [circularCheckBox setCompanionView:circularLabel];
     [circularCheckBox setState:kMPCheckBoxStateChecked animated:NO];
@@ -125,6 +129,7 @@
     [self.view.layer insertSublayer:gradient atIndex:0];
     [self.view setBackgroundColor:[UIColor whiteColor]];
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 #pragma mark - MPCheckBox Delegate
@@ -139,6 +144,9 @@
     [companionLabel setText:(state)? @"Checked" : @"Unchecked"];
     [companionLabel sizeToFit];
 =======
+=======
+
+>>>>>>> v0.1.3
 }
 
 #pragma mark - MPCheckBox Delegate
@@ -165,7 +173,11 @@
     }
     
     [groupLabel sizeToFit];
+<<<<<<< HEAD
 >>>>>>> v0.1.2
+=======
+
+>>>>>>> v0.1.3
     
 }
 

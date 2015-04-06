@@ -16,6 +16,7 @@
 		27B9E0091AD05DDA002EEF49 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27B9E0071AD05DDA002EEF49 /* LaunchScreen.xib */; };
 		27B9E0151AD05DDA002EEF49 /* MPCheckBoxDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B9E0141AD05DDA002EEF49 /* MPCheckBoxDemoTests.m */; };
 		27B9E0201AD05DFA002EEF49 /* MPCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B9E01F1AD05DFA002EEF49 /* MPCheckBox.m */; };
+		27E523C01AD3206F005B9538 /* MPTapGetureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E523BF1AD3206F005B9538 /* MPTapGetureRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,9 @@
 		27B9E0141AD05DDA002EEF49 /* MPCheckBoxDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPCheckBoxDemoTests.m; sourceTree = "<group>"; };
 		27B9E01E1AD05DFA002EEF49 /* MPCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCheckBox.h; sourceTree = "<group>"; };
 		27B9E01F1AD05DFA002EEF49 /* MPCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCheckBox.m; sourceTree = "<group>"; };
+		27E523BE1AD3206F005B9538 /* MPTapGetureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPTapGetureRecognizer.h; sourceTree = "<group>"; };
+		27E523BF1AD3206F005B9538 /* MPTapGetureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPTapGetureRecognizer.m; sourceTree = "<group>"; };
+		27E523C11AD321DE005B9538 /* MPTapGestureRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPTapGestureRecognizerDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 				2775A8981AD2CE2000AAE6DE /* MPCheckBoxGroup.h */,
 				2775A8991AD2CE2000AAE6DE /* MPCheckBoxGroup.m */,
 				27806E311AD1E1D1004F3E7F /* Protocols */,
+				27E523BE1AD3206F005B9538 /* MPTapGetureRecognizer.h */,
+				27E523BF1AD3206F005B9538 /* MPTapGetureRecognizer.m */,
 			);
 			name = MPCheckBox;
 			sourceTree = "<group>";
@@ -85,6 +91,7 @@
 			children = (
 				27806E2F1AD1DC41004F3E7F /* MPCheckBoxDelegate.h */,
 				2775A89B1AD2D56400AAE6DE /* MPCheckBoxGroupDelegate.h */,
+				27E523C11AD321DE005B9538 /* MPTapGestureRecognizerDelegate.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -253,6 +260,7 @@
 				27B9DFFB1AD05DDA002EEF49 /* main.m in Sources */,
 				270447541AD069C700F92ECF /* ViewController.m in Sources */,
 				27B9E0201AD05DFA002EEF49 /* MPCheckBox.m in Sources */,
+				27E523C01AD3206F005B9538 /* MPTapGetureRecognizer.m in Sources */,
 				2775A89A1AD2CE2000AAE6DE /* MPCheckBoxGroup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
