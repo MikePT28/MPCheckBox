@@ -1,5 +1,8 @@
 # MPCheckBox
 
+[![CocoaPods](https://img.shields.io/cocoapods/v/MPCheckBox.svg)]() 
+[![LICENSE](https://img.shields.io/badge/License-MIT-brightgreen.svg)]()
+
 Custom Check Boxes class. 
 
 Extends UIControl class. 
