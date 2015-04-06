@@ -105,8 +105,8 @@
 			children = (
 				27B9DFFC1AD05DDA002EEF49 /* AppDelegate.h */,
 				27B9DFFD1AD05DDA002EEF49 /* AppDelegate.m */,
-				27B9DFFF1AD05DDA002EEF49 /* ViewController.h */,
 				27806E301AD1E1C6004F3E7F /* MPCheckBox */,
+				27B9DFFF1AD05DDA002EEF49 /* ViewController.h */,
 				270447521AD069C700F92ECF /* ViewController.m */,
 				270447531AD069C700F92ECF /* Main.storyboard */,
 				27B9E0051AD05DDA002EEF49 /* Images.xcassets */,
