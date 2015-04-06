@@ -19,11 +19,7 @@ So far there are only two types of check boxes:
 ##TODO
 - [x] Pod
 - [ ] Add touch feedback
-<<<<<<< HEAD
-- [ ] Add support for radial groups
-=======
 - [x] Add support for radial groups
->>>>>>> v0.1.2
 
 Installation
 =============
@@ -96,4 +92,4 @@ MIT but Read de LICENSE file for more info.
 
 Version
 ===========
-v0.1.1 ~ Method names and properties may change in the future. The will be specified but concider yourself warned.
+v0.1.2 ~ Method names and properties may change in the future. The will be specified but concider yourself warned.
