@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = 'MPCheckBox'
-  spec.version      = '0.1.3'
+  spec.version      = '0.1.3.1'
   spec.license      = { :type => 'MIT' }
   spec.homepage     = 'https://github.com/MikePT28/MPCheckBox'
   spec.authors      = { 'MikePT28' => '' }
