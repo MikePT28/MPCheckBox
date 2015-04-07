@@ -92,8 +92,5 @@ MIT but Read de LICENSE file for more info.
 
 Version
 ===========
-<<<<<<< HEAD
-v0.1.2 ~ Method names and properties may change in the future. The will be specified but concider yourself warned.
-=======
-v0.1.3 ~ Method names and properties may change in the future. The will be specified but concider yourself warned.
->>>>>>> v0.1.3
+
+v0.1.3.1 ~ Method names and properties may change in the future. The will be specified but concider yourself warned.
