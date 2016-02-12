@@ -28,7 +28,7 @@ Installation
 * Just drag the files in the src folder to your project.
 * Import the checkbox class you want to use.
 
-##Cocoapods
+##CocoaPods
 ```
 platform :ios, "8.0"
 
